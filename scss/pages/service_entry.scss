@@ -62,7 +62,7 @@ a {
          }
          &__block {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: 60px;
          }
          &__block-item {
@@ -86,4 +86,36 @@ a {
 .wrapper {
    max-width: 1920px;
    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+   .main-bg {
+      .main-content {
+         padding: 0 180px 60px;
+      }
+   }
+}
+@media screen and (max-width: 1024px) {
+   .main-bg {
+      .main-content {
+         padding: 0 60px 60px;
+      }
+   }
+}
+@media screen and (max-width: 576px) {
+   .main-bg {
+      .main-content {
+         .top {
+            &__button {
+               margin-bottom: 30px;
+            }
+         }
+         .bottom {
+            &__block {
+               grid-template-columns: 1fr;
+               grid-gap: 30px;
+            }
+         }
+      }
+   }
 }

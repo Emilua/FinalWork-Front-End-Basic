@@ -30,7 +30,7 @@ let overlay = document.getElementById('overlay');
 let nav = document.getElementById('nav');
 let navClose = document.getElementById('nav-close');
 //Отримую main з services.html
-let mainStatic = document.querySelector('.main');
+let mainStatic = document.querySelector('.main-bg');
 
 burgerMenu.addEventListener('click', () => {
    overlay.classList.remove('hide');

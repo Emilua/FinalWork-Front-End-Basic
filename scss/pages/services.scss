@@ -1,0 +1,33 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+@import "../common/header.scss";
+@import "../common/service_section.scss";
+@import "../common/clients.scss";
+@import "../common/footer-bottom.scss";
+
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: "Montserrat";
+}
+a {
+   text-decoration: none;
+}
+.main-bg {
+   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+   width: 100%;
+   position: relative;
+   border-radius: 0px 0px 12px 12px;
+   @include main-shadow;
+}
+.main-static {
+   position: static;
+}
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+// .header .logo-block .logo-link {
+//    color: $color_white;
+// }

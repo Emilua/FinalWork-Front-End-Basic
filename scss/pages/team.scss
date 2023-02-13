@@ -1,0 +1,104 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+@import "../common/header.scss";
+@import "../common/footer-bottom.scss";
+
+* {
+   box-sizing: border-box;
+}
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+body {
+   font-family: "Montserrat", sans-serif;
+}
+a {
+   text-decoration: none;
+}
+.team-title {
+   @include font_hero;
+   padding: 0 280px;
+   // max-width: 1360px;
+   // margin: auto;
+}
+.cards-section {
+   padding: 60px 160px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 60px;
+   .card {
+      & a {
+         text-decoration: none;
+         display: block;
+      }
+      &:first-child .card-image {
+         background-image: url(../images/team/user-1.png);
+      }
+      &:nth-child(2) .card-image {
+         background-image: url(../images/team/user-2.png);
+      }
+      &:nth-child(3) .card-image {
+         background-image: url(../images/team/user-3.png);
+      }
+      &:nth-child(4) .card-image {
+         background-image: url(../images/team/user-4.png);
+      }
+      &:nth-child(5) .card-image {
+         background-image: url(../images/team/user-5.png);
+      }
+      &:nth-child(6) .card-image {
+         background-image: url(../images/team/user-6.png);
+      }
+      .card-image {
+         height: 400px;
+         // width: 100%;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+         margin-bottom: 15px;
+         border-radius: 12px;
+         overflow: hidden;
+      }
+      .user-name {
+         color: #323264;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 20px;
+         text-decoration: none;
+         margin-bottom: 5px;
+         &:hover {
+            color: $color_accent;
+         }
+      }
+      .user-info {
+         color: #b3b3ba;
+         font-size: 14px;
+      }
+   }
+}
+@media screen and (max-width: 1440px) {
+   .team-title {
+      padding: 0 180px;
+   }
+   .cards-section {
+      padding: 60px 60px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .team-title {
+      padding: 0 60px;
+   }
+   .cards-section {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media screen and (max-width: 576px) {
+   .team-title {
+      padding: 0 30px;
+   }
+   .cards-section {
+      padding: 30px;
+      grid-template-columns: repeat(1, 1fr);
+   }
+}

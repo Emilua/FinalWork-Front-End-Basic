@@ -1,0 +1,91 @@
+@mixin font_hero {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+}
+
+@mixin font_hero_gray($color) {
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   color: ($color);
+}
+
+@mixin font_h3($color) {
+   font-family: "Montserrat";
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 27px;
+   color: ($color);
+}
+@mixin font_h3_caps($color) {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: ($color);
+}
+
+@mixin font_h2($color) {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 37px;
+   color: ($color);
+}
+
+@mixin font_paragraph($color) {
+   font-size: 16px;
+   line-height: 26px;
+   color: ($color);
+}
+@mixin dot {
+   display: inline-block;
+   content: "";
+   width: 6px;
+   height: 6px;
+   background: #e6e6f0;
+   border-radius: 50%;
+   margin: 0 6px;
+   position: relative;
+   bottom: 2px;
+}
+
+@mixin main-shadow {
+   &::before,
+   &::after {
+      display: block;
+      content: "";
+      height: 10px;
+      border-radius: 0px 0px 12px 12px;
+      width: calc(100% - 40px);
+      background: #cacadb;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+   }
+   &::after {
+      bottom: -20px;
+      width: calc(100% - 80px);
+      background: #e7e7f2;
+   }
+}
+@mixin blue_button {
+   padding: 18px 30px;
+   background: $color_active_regular;
+   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+   border-radius: 12px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   color: $color_white;
+}

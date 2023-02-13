@@ -1,0 +1,59 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 0 auto;
+  padding: 0;
+  &__subtitle {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    @include font_h3($color_active_regular);
+  }
+  &__text {
+    @include font_paragraph($color_white);
+  }
+}
+.service-section {
+  padding: 0 160px 60px;
+  &__caption {
+    @include font_h3_caps($color_active_regular);
+    margin-bottom: 10px;
+    transition: all 0.4s;
+    &:hover {
+      color: $color_accent;
+      cursor: pointer;
+    }
+  }
+  &__title {
+    margin-bottom: 60px;
+    @include font_hero;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service-section {
+    padding: 0 60px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .service-section {
+    padding: 0 30px 60px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    .block {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+  }
+}

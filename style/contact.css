@@ -418,5 +418,46 @@
     position: static;
   }
 }
+.main-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-contact__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+.main-contact__form {
+  background: #f5f5fa;
+  border-radius: 12px;
+  padding: 30px;
+}
+.main-contact__form .form {
+  display: flex;
+  flex-direction: column;
+}
+.main-contact__form .form input,
+.main-contact__form .form textarea {
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
+.main-contact__form .form__user-name {
+  margin-bottom: 15px;
+}
 
 /*# sourceMappingURL=contact.css.map */

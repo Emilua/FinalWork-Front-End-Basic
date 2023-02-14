@@ -12,7 +12,7 @@
       rel="stylesheet">
    <link rel="stylesheet" href="../style/reset.css">
    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
-   <link rel="stylesheet" href="../style/service_entry.css">
+   <link rel="stylesheet" href="../style/contact.css">
    <title>Contact</title>
 </head>
 
@@ -68,7 +68,17 @@
                facebook</a>
 
          </div>
-         <div class="main-contact__form"></div>
+         <div class="main-contact__form">
+            <div class="main-contact__title">We would like to help you</div>
+            <form class="form" action="https://fom.in.ua/echo" method="get">
+               <input class="form__user-name" type="text" placeholder="Name" name="name">
+               <textarea name="message" placeholder="Message"></textarea>
+               <div class="form__subtitle">How to answer you?</div>
+               <input type="tel" name="phone" placeholder="Phone number">
+               <input type="email" name="email" placeholder="Email">
+               <input type="submit" value="Send message">
+            </form>
+         </div>
 
       </main>
    </div>

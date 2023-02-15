@@ -421,6 +421,55 @@
 .main-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 0 280px;
+  margin-bottom: 60px;
+}
+.main-contact .contact-social {
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.main-contact .contact-social a {
+  text-decoration: none;
+}
+.main-contact .contact-social__address {
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #e6e6f0;
+}
+.main-contact .contact-social__tell {
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+  margin-bottom: 15px;
+}
+.main-contact .contact-social__email {
+  font-size: 21px;
+  line-height: 30px;
+  color: #24a3ff;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #e6e6f0;
+}
+.main-contact .contact-social__fb {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  display: flex;
+  align-items: center;
+}
+.main-contact .contact-social__fb .fa-facebook {
+  font-size: 38px;
+  padding-right: 10px;
+}
+.main-contact .contact-social__fb:hover {
+  color: #f0145a;
 }
 .main-contact__title {
   font-family: "Montserrat";
@@ -458,6 +507,36 @@
 }
 .main-contact__form .form__user-name {
   margin-bottom: 15px;
+}
+.main-contact__form .form__user-message {
+  margin-bottom: 30px;
+  resize: none;
+}
+.main-contact__form .form__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin-bottom: 15px;
+}
+.main-contact__form .form__user-tell {
+  margin-bottom: 15px;
+}
+.main-contact__form .form__user-email {
+  margin-bottom: 30px;
+}
+.main-contact__form .form input.form__user-btn {
+  background-color: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  color: #ffffff;
+}
+.main-contact__form .form input.form__user-btn:hover {
+  background-color: #0085ff;
+}
+.main-contact__form .form input.form__user-btn:active {
+  background: #006ccf;
 }
 
 /*# sourceMappingURL=contact.css.map */

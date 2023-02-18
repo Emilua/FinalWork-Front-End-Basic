@@ -47,17 +47,22 @@
                </a>
 
             </div>
-            <nav class="nav">
+            <nav class="nav hide" id="nav">
                <a class="nav__link" href="#">about us</a>
-               <a class="nav__link" href="#">services</a>
+               <a class="nav__link " href="#">services</a>
                <a class="nav__link" href="#">team</a>
                <a class="nav__link" href="#">publications</a>
                <a class="nav__link active" href="#">contact</a>
+               <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
             </nav>
-            <img class="burger" src="../images/icons/Hamburger-dark.svg" alt="Hamburger">
+            <div class="overlay hide" id="overlay"></div>
+            <img class="burger" id="burger" src="../images/icons/Hamburger-dark.svg" alt="Hamburger">
          </div>
       </header>
 
+
+   </div>
+   <div class="wrapper">
       <main class="main-contact">
          <div class="main-contact__social contact-social">
             <a href="#" class="contact-social__address">Kyiv,<br />Mechnikova str, 14</a>
@@ -70,13 +75,13 @@
          </div>
          <div class="main-contact__form">
             <div class="main-contact__title">We would like to help you</div>
-            <form class="form" action="https://fom.in.ua/echo" method="get">
+            <form class="form" method="get"><!--https://fom.in.ua/echo-->
                <input class="form__user-name" type="text" placeholder="Name" name="name">
                <textarea class="form__user-message" name="message" placeholder="Message"></textarea>
                <div class="form__subtitle">How to answer you?</div>
                <input class="form__user-tell" type="tel" name="phone" placeholder="Phone number">
                <input class="form__user-email" type="email" name="email" placeholder="Email">
-               <input class="form__user-btn" type="submit" value="Send message">
+               <input class="form__user-btn" type="submit" value="Send message" onclick="return change(this);">
             </form>
          </div>
 
@@ -108,6 +113,19 @@
    <script src="https://kit.fontawesome.com/96a13d377c.js" crossorigin="anonymous"></script>
    <script src="../libs/bootstrap/js/bootstrap.js"></script>
    <script src="../script.js"></script>
+   <script type="text/javascript">
+      let el = document.querySelector('.form__user-btn');
+      // el.addEventListener('clik', () => {
+      //    el.css('background-color', 'red');
+      // })
+      function change(el) {
+         if (el.value === "Send message") {
+            el.value = "Sent";
+            el.classList.add('button-clicked');
+            el.type = "Button";
+         }
+      }
+   </script>
 </body>
 
 </html>

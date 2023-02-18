@@ -231,7 +231,7 @@
          .location {
             top: 0;
             left: 0;
-            width: 100%;
+            min-width: calc(100% - 40px);
             max-height: 45px;
             display: flex;
             justify-content: space-between;
@@ -282,7 +282,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            min-width: 100%;
+            min-width: calc(100% - 40px);
             flex-direction: column;
             z-index: 2;
             background: $color_white;

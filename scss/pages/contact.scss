@@ -78,6 +78,12 @@
             padding: 15px;
             border: none;
             @include font_paragraph($color_text);
+            &:focus {
+               outline-color: $color_active_regular;
+            }
+            &:invalid {
+               outline-color: #ff0000;
+            }
          }
          &__user-name {
             margin-bottom: 15px;
@@ -111,5 +117,36 @@
             }
          }
       }
+   }
+}
+.button-clicked {
+   background-color: $color_bg_alt !important;
+   color: $color_main_regular !important;
+   box-shadow: none !important;
+}
+
+@media screen and (max-width: 1440px) {
+   .main-contact {
+      padding: 0 180px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .main-contact {
+      padding: 0 60px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .main-contact {
+      display: flex;
+      flex-direction: column;
+      &__social {
+         margin-bottom: 60px;
+      }
+   }
+}
+@media screen and (max-width: 576px) {
+   .main-contact {
+      padding: 0 30px 30px;
    }
 }

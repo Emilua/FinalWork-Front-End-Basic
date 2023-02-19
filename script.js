@@ -1,29 +1,4 @@
-// let tabButtons = document.querySelectorAll('.tab-labels .label');
-// let tabContent = document.querySelectorAll('.tab-content .tab-content-item');
-// tabButtons.forEach((button, index) => {
-//    button.addEventListener('click', () => {
-//       tabButtons.forEach((btn) => {
-//          btn.classList.remove('active');
-//       })
-//       button.classList.add('active');
-//       tabContent.forEach((block) => {
-//          block.classList.remove('active');
-//       })
-//       tabContent[index].classList.add('active');
-//    })
-// });
 
-// let scrollBtn = document.getElementById('scroll-to-bottom');
-// scrollBtn.addEventListener('click', (event) => {
-//    event.preventDefault();
-//    let tabsContainer = document.querySelector('.main-tabs');
-//    console.log(tabsContainer.offsetTop)
-
-//    window.scrollTo({
-//       top: tabsContainer.offsetTop,
-//       behavior: 'smooth'
-//    })
-// })
 
 let burgerMenu = document.getElementById('burger');
 let overlay = document.getElementById('overlay');
@@ -49,4 +24,31 @@ navClose.addEventListener('click', () => {
    navClose.classList.remove('show');
    navClose.classList.add('hide');
    mainStatic.classList.remove('main-static');
+})
+
+let tabButtons = document.querySelectorAll('.tab-labels .label');
+let tabContent = document.querySelectorAll('.tab-content .tab-content-item');
+tabButtons.forEach((button, index) => {
+   button.addEventListener('click', () => {
+      tabButtons.forEach((btn) => {
+         btn.classList.remove('active');
+      })
+      button.classList.add('active');
+      tabContent.forEach((block) => {
+         block.classList.remove('active');
+      })
+      tabContent[index].classList.add('active');
+   })
+});
+
+let scrollBtn = document.getElementById('scroll-to-bottom');
+scrollBtn.addEventListener('click', (event) => {
+   event.preventDefault();
+   let tabsContainer = document.querySelector('.main-tabs');
+   console.log(tabsContainer.offsetTop)
+
+   window.scrollTo({
+      top: tabsContainer.offsetTop,
+      behavior: 'smooth'
+   })
 })

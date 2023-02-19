@@ -193,7 +193,7 @@
   .header .nav-location .location {
     top: 0;
     left: 0;
-    width: 100%;
+    min-width: calc(100% - 40px);
     max-height: 45px;
     display: flex;
     justify-content: space-between;
@@ -235,7 +235,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    min-width: 100%;
+    min-width: calc(100% - 40px);
     flex-direction: column;
     z-index: 2;
     background: #ffffff;
@@ -281,11 +281,17 @@
 .block__subtitle {
   padding-top: 30px;
   margin-bottom: 15px;
+}
+.block__subtitle a {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: #24a3ff;
+  transition: all 0.4s;
+}
+.block__subtitle a:hover {
+  color: #f0145a;
 }
 .block__text {
   font-size: 16px;

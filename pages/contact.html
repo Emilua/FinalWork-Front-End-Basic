@@ -20,7 +20,7 @@
    <div class="wrapper">
       <header class="header header-light">
          <div class="logo-block">
-            <a href="#" class="logo"><img src="../images/icons/Logo-dark.png" alt="logo"></a>
+            <a href="../index.html" class="logo"><img src="../images/icons/Logo-dark.png" alt="logo"></a>
             <div class="breadcrumb">
                <img src="../images/icons/Slash.png" alt="Slash" class="logo-slash">
                <div class="logo-link">contact</div>
@@ -49,8 +49,8 @@
             </div>
             <nav class="nav hide" id="nav">
                <a class="nav__link" href="#">about us</a>
-               <a class="nav__link " href="#">services</a>
-               <a class="nav__link" href="#">team</a>
+               <a class="nav__link " href="./services.html">services</a>
+               <a class="nav__link" href="./team.html">team</a>
                <a class="nav__link" href="#">publications</a>
                <a class="nav__link active" href="#">contact</a>
                <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
@@ -69,8 +69,10 @@
 
             <a href="tel:0800211927" class="contact-social__tell">0800 211 927</a>
             <a href="mailto:contact@forstudy.space" class="contact-social__email">contact@forstudy.space</a>
-            <a href="#" class="contact-social__fb"><i class="fa-brands fa-facebook icon-social"></i>Our page<br />on
-               facebook</a>
+            <a href="#" class="contact-social__fb"><i class="fa-brands fa-facebook icon-social"></i><span
+                  class="fb__text">Our
+                  page<br />on
+                  facebook</a></span>
 
          </div>
          <div class="main-contact__form">
@@ -115,9 +117,6 @@
    <script src="../script.js"></script>
    <script type="text/javascript">
       let el = document.querySelector('.form__user-btn');
-      // el.addEventListener('clik', () => {
-      //    el.css('background-color', 'red');
-      // })
       function change(el) {
          if (el.value === "Send message") {
             el.value = "Sent";

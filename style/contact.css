@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -443,7 +456,7 @@
 .main-contact .contact-social__tell {
   font-size: 21px;
   line-height: 30px;
-  color: #323264;
+  color: #46466e;
   margin-bottom: 15px;
 }
 .main-contact .contact-social__email {
@@ -463,16 +476,19 @@
   color: #24a3ff;
   display: flex;
   align-items: center;
+  transition: all 0.4s;
 }
 .main-contact .contact-social__fb .fa-facebook {
   font-size: 38px;
   padding-right: 10px;
 }
-.main-contact .contact-social__fb:hover {
+.main-contact .contact-social__fb .fa-facebook:hover {
+  color: #f0145a;
+}
+.main-contact .contact-social__fb .fb__text:hover {
   color: #f0145a;
 }
 .main-contact__title {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 38px;

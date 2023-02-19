@@ -19,7 +19,7 @@
    <div class="wrapper">
       <header class="header header-light">
          <div class="logo-block">
-            <a href="#" class="logo"><img src="../images/icons/Logo-dark.png" alt="logo"></a>
+            <a href="../index.html" class="logo"><img src="../images/icons/Logo-dark.png" alt="logo"></a>
             <div class="breadcrumb">
                <img src="../images/icons/Slash.png" alt="Slash" class="logo-slash">
                <div class="logo-link">team</div>
@@ -46,15 +46,16 @@
                </a>
 
             </div>
-            <nav class="nav">
+            <nav class="nav hide" id="nav">
                <a class="nav__link" href="#">about us</a>
-               <a class="nav__link" href="#">services</a>
-               <a class="nav__link active" href="#">team</a>
+               <a class="nav__link" href="./services.html">services</a>
+               <a class="nav__link active" href="./team.html">team</a>
                <a class="nav__link" href="#">publications</a>
-               <a class="nav__link" href="#">contact</a>
+               <a class="nav__link" href="./contact.html">contact</a>
+               <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
             </nav>
             <div class="overlay hide" id="overlay"></div>
-            <img class="burger" src="../images/icons/Hamburger-dark.svg" alt="Hamburger">
+            <img class="burger" id="burger" src="../images/icons/Hamburger-dark.svg" alt="Hamburger">
          </div>
       </header>
    </div>

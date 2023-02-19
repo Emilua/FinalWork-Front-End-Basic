@@ -17,27 +17,22 @@
          text-decoration: none;
       }
       &__address {
-         font-size: 21px;
-         line-height: 30px;
-         color: $color_main_regular;
+         @include font_main_regular($color_main_regular);
          padding-bottom: 30px;
          margin-bottom: 30px;
          border-bottom: 4px solid $color_separator;
       }
       &__tell {
-         font-size: 21px;
-         line-height: 30px;
-         color: $color_main_regular;
+         @include font_main_regular($color_alt);
          margin-bottom: 15px;
       }
       &__email {
-         font-size: 21px;
-         line-height: 30px;
-         color: $color_active_regular;
+         @include font_main_regular($color_active_regular);
          padding-bottom: 30px;
          margin-bottom: 30px;
          border-bottom: 4px solid $color_separator;
       }
+
       &__fb {
          font-weight: 700;
          font-size: 12px;
@@ -47,11 +42,15 @@
          color: $color_active_regular;
          display: flex;
          align-items: center;
+         transition: all 0.4s;
          .fa-facebook {
             font-size: 38px;
             padding-right: 10px;
+            &:hover {
+               color: $color_accent;
+            }
          }
-         &:hover {
+         .fb__text:hover {
             color: $color_accent;
          }
       }
@@ -68,7 +67,6 @@
       padding: 30px;
 
       .form {
-         // доробити фокус у формі
          display: flex;
          flex-direction: column;
          input,

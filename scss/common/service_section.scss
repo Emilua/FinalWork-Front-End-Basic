@@ -10,7 +10,13 @@
   &__subtitle {
     padding-top: 30px;
     margin-bottom: 15px;
-    @include font_h3($color_active_regular);
+    & a {
+      @include font_h3($color_active_regular);
+      transition: all 0.4s;
+      &:hover {
+        color: $color_accent;
+      }
+    }
   }
   &__text {
     @include font_paragraph($color_white);
